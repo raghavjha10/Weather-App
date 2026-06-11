@@ -6,22 +6,22 @@ Course - B.Tech CSE
 
 SkyPulse Pro is a modern and responsive weather application built using HTML, CSS, JavaScript, Chart.js, and OpenWeatherMap API. It provides real-time weather information with an attractive glassmorphism UI, interactive charts, weather forecasts, and smart features to enhance the user experience.
 
-🚀 Features
-🌍 Real-time weather information for any city
-📍 Current location weather using Geolocation API
-🎤 Voice search for city weather lookup
-🌡 Temperature, humidity, pressure, visibility, and wind details
-🌅 Sunrise and sunset timings
-🌫 Air Quality Index (AQI) monitoring
-☀ UV Index estimation
-📅 5-Day weather forecast
-📊 Interactive temperature chart using Chart.js
-⭐ Favorite cities management
-🕒 Live digital clock and dynamic greeting
-🌙 Dark Mode / Light Mode support
-📜 Recent search history using Local Storage
-🚀 Responsive design for desktop, tablet, and mobile devices
-🎨 Modern glassmorphism and animated UI
+🚀 Features                              
+🌍 Real-time weather information for any city                                                          
+📍 Current location weather using Geolocation API                                                
+🎤 Voice search for city weather lookup                                                    
+🌡 Temperature, humidity, pressure, visibility, and wind details                                    
+🌅 Sunrise and sunset timings                                                        
+🌫 Air Quality Index (AQI) monitoring                                  
+☀ UV Index estimation                                                        
+📅 5-Day weather forecast                                                      
+📊 Interactive temperature chart using Chart.js                                        
+⭐ Favorite cities management                                           
+🕒 Live digital clock and dynamic greeting                                               
+🌙 Dark Mode / Light Mode support                                                       
+📜 Recent search history using Local Storage                                                                  
+🚀 Responsive design for desktop, tablet, and mobile devices                                                                
+🎨 Modern glassmorphism and animated UI                                                       
 🛠 Technologies Used
 HTML5
 CSS3
