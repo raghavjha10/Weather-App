@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SkyPulse Pro Weather App</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="background" id="background"></div>
+
+<div class="container">
+
+<header>
+
+<h1>☁ SkyPulse Pro</h1>
+
+<p>Advanced Weather Intelligence Dashboard</p>
+
+<div id="clock"></div>
+
+<div id="greeting"></div>
+
+<button id="themeBtn">
+🌙 Toggle Theme
+</button>
+
+</header>
+
+<!-- Search -->
+
+<div class="search-box">
+
+<input
+type="text"
+id="cityInput"
+placeholder="Enter city name">
+
+<button onclick="fetchWeather()">
+🔍 Search
+</button>
+
+<button onclick="getLocationWeather()">
+📍
+</button>
+
+<button onclick="startVoiceSearch()">
+🎤
+</button>
+
+</div>
+
+<p id="errorMsg"></p>
+
+<!-- History -->
+
+<div class="history-section">
+
+<h3>Recent Searches</h3>
+
+<ul id="historyList"></ul>
+
+</div>
+
+<!-- Main Card -->
+
+<div class="weather-card" id="weatherCard">
+
+<div class="top-section">
+
+<div>
+
+<h2 id="cityName">City</h2>
+
+<div class="country-info">
+
+<img id="countryFlag">
+
+<span id="countryDate"></span>
+
+</div>
+
+</div>
+
+<div id="weatherIconBig">
+☀
+</div>
+
+</div>
+
+<div class="temp-section">
+
+<h1 id="tempValue">0</h1>
+
+<div>
+
+<span id="tempUnit">°C</span>
+
+<button onclick="toggleUnit()">
+Switch
+</button>
+
+</div>
+
+</div>
+
+<p id="conditionLabel"></p>
+
+<p>
+Feels Like:
+<span id="feelsLike"></span>
+</p>
+
+<p id="tempRange"></p>
+
+<!-- Weather Tip -->
+
+<div class="tip-box">
+
+<span id="weatherTip"></span>
+
+</div>
+
+<!-- Details -->
+
+<div class="details-grid">
+
+<div class="detail">
+💧
+<h3 id="humidity"></h3>
+<p>Humidity</p>
+</div>
+
+<div class="detail">
+🌬
+<h3 id="windSpeed"></h3>
+<p>Wind</p>
+</div>
+
+<div class="detail">
+👁
+<h3 id="visibility"></h3>
+<p>Visibility</p>
+</div>
+
+<div class="detail">
+🧭
+<h3 id="pressure"></h3>
+<p>Pressure</p>
+</div>
+
+<div class="detail">
+🌅
+<h3 id="sunrise"></h3>
+<p>Sunrise</p>
+</div>
+
+<div class="detail">
+🌇
+<h3 id="sunset"></h3>
+<p>Sunset</p>
+</div>
+
+<div class="detail">
+☁
+<h3 id="cloudiness"></h3>
+<p>Clouds</p>
+</div>
+
+<div class="detail">
+💨
+<h3 id="gusts"></h3>
+<p>Wind Gust</p>
+</div>
+
+<div class="detail">
+🌫
+<h3 id="aqi"></h3>
+<p>AQI</p>
+</div>
+
+<div class="detail">
+☀
+<h3 id="uvVal"></h3>
+<p>UV Index</p>
+</div>
+
+</div>
+
+<!-- Forecast -->
+
+<h2 class="forecast-title">
+5 Day Forecast
+</h2>
+
+<div id="forecastContainer">
+
+</div>
+
+<!-- Chart -->
+
+<div class="chart-card">
+
+<canvas id="tempChart"></canvas>
+
+</div>
+
+</div>
+
+<!-- Favourite Cities -->
+
+<div class="favorites">
+
+<h3>Favorite Cities</h3>
+
+<button onclick="saveFavorite()">
+⭐ Save Current City
+</button>
+
+<ul id="favoriteList"></ul>
+
+</div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
