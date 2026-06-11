@@ -25,28 +25,20 @@ SkyPulse Pro is a modern and responsive weather application built using HTML, CS
 
 🛠 Technologies Used
 
-HTML5   
-
-CSS3
-
-JavaScript (ES6)
-
-OpenWeatherMap API
-
-Geolocation API
-
-Web Speech API
-
-Chart.js
-
-Local Storage
+HTML5, CSS3, JavaScript (ES6), OpenWeatherMap API, Geolocation API, Web Speech API, Chart.js, Local Storage
 
 📸 Project Highlights
+
 Clean and modern user interface
+
 Real-time API integration
+
 Interactive data visualization
+
 Mobile-friendly responsive layout
+
 User-friendly weather dashboard
+
 🎯 Learning Outcomes
 
 This project demonstrates:
